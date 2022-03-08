@@ -15,10 +15,10 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
-const cookbookRouter = require('./controllers/postRoutes')
+const postRouter = require('./controllers/postController')
 app.use('/posts/', postRouter)
 
-const authorRouter = require('./controllers/commentRoutes')
+const commentRouter = require('./controllers/commentController')
 app.use('/comments/', commentRouter)
 
 app.listen(PORT, () => console.log(`Server running on ${PORT}`))
