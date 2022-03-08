@@ -1,0 +1,76 @@
+[
+  {
+    "Title": "Bunches of Wrenches",
+    "Price": 12,
+    "Location": "Chicago",
+    "Description":
+      "I have a good deal of wrenches, in various sizes, that I dont get a lot of use out of. If you need them Ive got em!",
+    "Comments":[
+      {
+      "Name": "Anthony",
+        "Comment":
+        "I need Wrenches! My number is xxx-xxx-xxxx, please reach out!",
+      "vote": 3
+    },
+    {
+      "Name": "John",
+              "Comment":
+              "This is great, my neighborhood could use more wrenches for some projects!",
+            "vote": 6
+    }
+  ]
+    },
+    {
+      "Title": "Bikes for rent",
+      "Price": 15,
+      "Location": "Ann Arbor",
+      "Description":
+        "Bunch of bikes for daily rent to explore the city, we also have helmets, knee pads and training wheels!",
+ 
+      "Comments":[
+        {
+          "Name": "Jim",
+          "Comment":
+            "I have a tour group coming through town in a few weeks, what is the max number of bikes we can rent?",
+          "vote": 1
+        },
+        {
+          "Name": "Kim",
+                  "Comment":
+              "Great prices! My friends and I rent every weekend to check out the parks and festivals, 10/10 would recommend! ",
+            "vote": 10
+        }
+      ]
+    },
+    {
+      "Title": "Open concept studio available",
+          "Price": 500,
+        "Location": "Bay Area",
+        "Description":
+          "Spacious and affordable studios for photography or other art/space needs. Built in industrial sink and great natural lighting!",
+
+      "Comments":[
+        {
+          "Name": "Samantha",
+          "Comment":
+            "My daughter needs a practice space for trombone, this is perfect!",
+          "vote": 1
+        },
+        {
+          "Name": "Mark",
+       
+          "Comment":
+            "Is the price negotiable? This looks perfect for painting!",
+          "vote": 8
+        },
+        {
+          "Name": "Hunter",
+        
+          "Comment":
+            "Are there industrial plug-ins for larger equipment? I make t-shirts using washing machines and would love this space for my work!",
+          "vote": 2
+        }
+      ]
+    }
+
+]
