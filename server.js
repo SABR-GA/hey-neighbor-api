@@ -19,6 +19,6 @@ const cookbookRouter = require('./controllers/postRoutes')
 app.use('/posts/', postRouter)
 
 const authorRouter = require('./controllers/commentRoutes')
-app.use('/comments', commentRouter)
+app.use('/comments/', commentRouter)
 
 app.listen(PORT, () => console.log(`Server running on ${PORT}`))
