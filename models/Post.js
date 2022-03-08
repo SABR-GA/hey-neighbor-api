@@ -1,13 +1,13 @@
 const mongoose = require('./../db/connection');
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
-const postSchema = new Schema ({
-    Title: String,
-    Date: Date.now,
-    Price: Number,
-    Location: String,
-    Description: String,
-    Comments: [{type: Schema.Types.ObjectId, ref: "Comment"}]
-})
+const postSchema = new Schema({
+	Title: String,
+	Date: Date.now,
+	Price: Number,
+	Location: String,
+	Description: String,
+	Comments: [ { ref: 'Comment', type: Schema.Types.Object } ]
+});
 
-module.exports=mongoose.model('Post', postSchema)
+module.exports = mongoose.model('Post', postSchema);

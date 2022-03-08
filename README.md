@@ -13,7 +13,7 @@ A fullstack application using MERN stack that lets people borrow/rent items or s
 - generate a mock visual prototype for proof of concept
 - made user stories to illustrate purpose of the app and assess relevant user-centric design
 - Looked at industry design practices to develop a simple but aesthetically relevant and marketable logo design
-    - ![image](./images/logo.png)
+    - ![image](./images/hey-neighbor-logo.png)
 
 ## rules
 - communicate standards for typing and naming conventions as they initailly occur to be adhered to throughout the development of the project in the interest of achieving harmonious and cohesive programs
