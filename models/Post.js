@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const postSchema = new Schema({
 	Title: String,
-	Date: Date.now,
+	Date: Date,
 	Price: Number,
 	Location: String,
 	Description: String,
