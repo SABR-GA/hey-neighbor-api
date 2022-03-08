@@ -1,5 +1,6 @@
 const express = require("express");
 const Post = require("./../models/Post");
+const Comment = require("./../models/Comment.js");
 
 const router = express.Router();
 
@@ -20,7 +21,7 @@ router.post("/post", (req, res) => {
 
 //view comments
 router.get("/post/:postId", (req, res) => {
-  Post.find(req.params.postId, req.body, {
+  Post.findById(req.params.postId, req.body, {
     new: true,
   }).then((post) => {
     res.status(200).json(post);
@@ -36,21 +37,24 @@ router.patch("/post/:postId", (req, res) => {
   });
 });
 //update a comment
-router.patch("/post/:postId/comment/commentId", (req, res) => {
-  Post.findByIdAndUpdate(req.params.commentId, req.body, {
-    new: true,
-  }).then((post) => {
-    res.status(200).json(post);
-  });
-});
+// router.patch("/post/:postId/comment/:commentId", (req, res) => {
+//   Post.findById(req.params.postId).then((post) => {
+//     Comment.findByIdAndUpdate(req.params.commentId, req.body, {
+//       new: true
+//     }).then((post) => {
+//       res.status(200).json(post);
+//       post.save()
+//     });
+//   });
+// });
 
 //destroy a single comment
-router.delete("/post/:postId/comment/commentId", (req, res) => {
-  Post.findByIdAndDelete(req.params.commentId, req.body, {
-    new: true,
-  }).then((post) => {
-    res.status(200).json(post);
-  });
-});
+// router.delete("/post/:postId/comment/commentId", (req, res) => {
+//   Post.findByIdAndDelete(req.params.commentId, req.body, {
+//     new: true,
+//   }).then((post) => {
+//     res.status(200).json(post);
+//   });
+// });
 
 module.exports = router;
