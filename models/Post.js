@@ -7,7 +7,7 @@ const postSchema = new Schema({
 	Price: Number,
 	Location: String,
 	Description: String,
-	Comments: [ { ref: 'Comment', type: Schema.Types.Object } ]
+	Comments: [ { ref: 'Comment', type: Schema.Types.ObjectId } ]
 });
 
 module.exports = mongoose.model('Post', postSchema);
