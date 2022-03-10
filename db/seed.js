@@ -14,7 +14,7 @@ Post.deleteMany().then(() => {
           Name: 'Anthony',
           
           Comment: 'I need Wrenches! My number is xxx-xxx-xxxx, please reach out!',
-          vote: 3
+          Vote: 3
         }).then(Comment => {
           Post.Comments.push(Comment)
         }),
@@ -22,7 +22,7 @@ Post.deleteMany().then(() => {
           Name: 'John',
           
           Comment: 'This is great, my neighborhood could use more wrenches for some projects!',
-          vote: 6
+          Vote: 6
         }).then(Comment => {
           Post.Comments.push(Comment)
         })
@@ -42,7 +42,7 @@ Post.deleteMany().then(() => {
           Name: 'Jim',
           
           Comment: 'I have a tour group coming through town in a few weeks, what is the max number of bikes we can rent?',
-          vote: 1
+          Vote: 1
         }).then(Comment => {
           Post.Comments.push(Comment)
         }),
@@ -50,7 +50,7 @@ Post.deleteMany().then(() => {
           Name: 'Kim',
           
           Comment: 'Great prices! My friends and I rent every weekend to check out the parks and festivals, 10/10 would recommend! ',
-          vote: 10
+          Vote: 10
         }).then(Comment => {
           Post.Comments.push(Comment)
         })
@@ -70,7 +70,7 @@ Post.deleteMany().then(() => {
           Name: 'Samantha',
           
           Comment: 'My daughter needs a practice space for trombone, this is perfect!',
-          vote: 1
+          Vote: 1
         }).then(Comment => {
           Post.Comments.push(Comment)
         }),
@@ -78,7 +78,7 @@ Post.deleteMany().then(() => {
           Name: 'Mark',
           
           Comment: 'Is the price negotiable? This looks perfect for painting!',
-          vote: 8
+          Vote: 8
         }).then(Comment => {
           Post.Comments.push(Comment)
         }),
@@ -86,7 +86,7 @@ Post.deleteMany().then(() => {
           Name: 'Hunter',
           
           Comment: 'Are there industrial plug-ins for larger equipment? I make t-shirts using washing machines and would love this space for my work!',
-          vote: 2
+          Vote: 2
         }).then(Comment => {
           Post.Comments.push(Comment)
         })
